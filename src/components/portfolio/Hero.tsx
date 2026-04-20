@@ -96,7 +96,7 @@ export const Hero = () => {
           </div>
           <div ref={ruleRef} className="mt-2 h-[2px] bg-accent" style={{ width: 0 }} />
           <h2 ref={tagRef} className="mt-5 font-display text-[24px] font-medium leading-[1.2] text-text-primary md:text-[28px]">
-            Full-Stack Developer. Product Builder. CS Undergrad.
+            Full-Stack Developer. Product Builder. IT Undergrad.
           </h2>
           <div ref={subRef} className="mt-4 font-mono text-[14px] text-text-muted">
             Next.js · Firebase · React Native · TypeScript
