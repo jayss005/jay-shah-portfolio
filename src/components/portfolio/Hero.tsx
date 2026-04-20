@@ -118,7 +118,9 @@ export const Hero = () => {
               </span>
             </a>
             <a
-              href="/resume.pdf"
+              href="/Jay_Shah_Resume.pdf"
+              download="Jay_Shah_Resume.pdf"
+              target="_blank"
               data-cursor="button"
               className="group relative border-2 border-text-primary px-8 py-4 font-mono text-[13px] font-bold text-text-primary transition-all duration-200 hover:border-accent hover:text-accent active:scale-[0.97]"
             >
