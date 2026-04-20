@@ -120,9 +120,9 @@ export const Resume = () => {
               setTimeout(() => setDownloading(false), 1200);
             }}
             data-cursor="button"
-            className="group mt-10 block w-full overflow-hidden border-2 border-accent bg-accent px-6 py-5 text-center font-mono text-[14px] font-bold text-bg-primary transition-all duration-200 hover:-translate-y-[3px]"
+            className="group relative mt-10 block w-full overflow-hidden border-2 border-accent bg-accent px-6 py-5 text-center font-mono text-[14px] font-bold text-bg-primary transition-all duration-200 hover:-translate-y-[3px]"
           >
-            <span className="absolute inset-0 -translate-x-0 bg-bg-primary transition-transform duration-200 group-hover:-translate-x-full" />
+            <span className="absolute inset-0 translate-x-[-101%] bg-bg-primary transition-transform duration-200 group-hover:translate-x-0" />
             <span className="relative transition-colors duration-200 group-hover:text-accent">
               DOWNLOAD RESUME ↗
             </span>
