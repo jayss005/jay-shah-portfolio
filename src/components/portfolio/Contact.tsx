@@ -98,7 +98,7 @@ export const Contact = () => {
       </div>
 
       <footer className="mt-32 flex flex-col items-start justify-between gap-4 font-mono text-[11px] md:flex-row" style={{ color: "hsl(var(--text-faint))" }}>
-        <div>© 2025 Jay Shah. Built with obsession.</div>
+        <div />
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="group transition-colors hover:text-accent"
