@@ -112,7 +112,7 @@ export const Hero = () => {
               data-cursor="button"
               className="group relative overflow-hidden border-2 border-accent bg-accent px-8 py-4 font-mono text-[13px] font-bold text-bg-primary transition-transform duration-200 active:scale-[0.97]"
             >
-              <span className="absolute inset-0 -translate-x-0 bg-bg-primary transition-transform duration-200 group-hover:-translate-x-full" />
+              <span className="absolute inset-0 translate-x-[-101%] bg-bg-primary transition-transform duration-200 group-hover:translate-x-0" />
               <span className="relative transition-colors duration-200 group-hover:text-accent">
                 VIEW WORK <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
               </span>
