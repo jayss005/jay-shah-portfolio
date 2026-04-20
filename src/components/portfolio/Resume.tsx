@@ -114,7 +114,8 @@ export const Resume = () => {
             Everything above — but in a PDF. Updated May 2025.
           </p>
           <a
-            href="/resume.pdf"
+            href="/Jay_Shah_Resume.docx"
+            download="Jay_Shah_Resume.docx"
             onClick={() => {
               setDownloading(true);
               setTimeout(() => setDownloading(false), 1200);

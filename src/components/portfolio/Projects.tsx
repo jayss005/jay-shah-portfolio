@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SectionHeader } from "./SectionHeader";
+import focusflowMockup from "@/assets/focusflow-mockup.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,21 +96,20 @@ export const Projects = () => {
           </div>
           <div className="mt-6 flex gap-6 font-mono text-[13px]">
             <a href="https://github.com/jayss005" target="_blank" rel="noreferrer" className="text-accent hover:underline" data-cursor="hover">GITHUB ↗</a>
-            <a href="#" className="text-accent hover:underline" data-cursor="hover">LIVE DEMO ↗</a>
+            <a href="https://focusflow-gamma-six.vercel.app/" target="_blank" rel="noreferrer" className="text-accent hover:underline" data-cursor="hover">LIVE DEMO ↗</a>
           </div>
         </div>
 
         <div className="relative min-h-[280px] overflow-hidden" style={{ background: "hsl(var(--bg-elevated))" }}>
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: "radial-gradient(hsl(0 0% 12%) 1px, transparent 1px)",
-              backgroundSize: "20px 20px",
-            }}
+          <img
+            src={focusflowMockup}
+            alt="FocusFlow productivity SaaS landing page screenshot"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover object-top opacity-90 transition-opacity duration-300 group-hover:opacity-100"
           />
           <Bracket pos="tr" />
           <Bracket pos="bl" />
-          <div className="absolute bottom-3 right-4 font-mono text-[9px]" style={{ color: "hsl(0 0% 16%)" }}>
+          <div className="absolute bottom-3 right-4 font-mono text-[9px]" style={{ color: "hsl(var(--accent))", textShadow: "0 0 8px hsl(0 0% 0% / 0.8)" }}>
             v1.0.0 · PRODUCTION
           </div>
         </div>
