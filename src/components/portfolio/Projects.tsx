@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SectionHeader } from "./SectionHeader";
-import focusflowMockup from "@/assets/focusflow-mockup.png";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,15 +101,16 @@ export const Projects = () => {
         </div>
 
         <div className="relative min-h-[280px] overflow-hidden" style={{ background: "hsl(var(--bg-elevated))" }}>
-          <img
-            src={focusflowMockup}
-            alt="FocusFlow productivity SaaS landing page screenshot"
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover object-top opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: "radial-gradient(hsl(0 0% 12%) 1px, transparent 1px)",
+              backgroundSize: "20px 20px",
+            }}
           />
           <Bracket pos="tr" />
           <Bracket pos="bl" />
-          <div className="absolute bottom-3 right-4 font-mono text-[9px]" style={{ color: "hsl(var(--accent))", textShadow: "0 0 8px hsl(0 0% 0% / 0.8)" }}>
+          <div className="absolute bottom-3 right-4 font-mono text-[9px]" style={{ color: "hsl(0 0% 16%)" }}>
             v1.0.0 · PRODUCTION
           </div>
         </div>
